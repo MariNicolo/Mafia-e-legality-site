@@ -1,0 +1,217 @@
+/* Import Fonts */
+@import url('https://fonts.cdnfonts.com/css/mafia');
+
+/* Keyframes */
+@keyframes tremble {
+  0% {
+      transform: translateX(-1px) rotate(0deg);
+  }
+  25% {
+      transform: translateX(1px) rotate(1deg);
+  }
+  50% {
+      transform: translateX(-1px) rotate(-1deg);
+  }
+  75% {
+      transform: translateX(1px) rotate(0deg);
+  }
+  100% {
+      transform: translateX(-1px) rotate(1deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Animations */
+.animated-img3 {
+  animation: fadeIn 3s ease-in-out;
+}
+.animated-img6 {
+  animation: fadeIn 6s ease-in-out;
+}
+.animated-img9 {
+  animation: fadeIn 9s ease-in-out;
+}
+.tremble-button:hover {
+  animation: tremble 0.1s infinite linear;
+}
+
+/* Images */
+img.logo {
+    width: 50px;
+    height: 50px;
+}
+img {
+  width: 100%;
+  height: 60%;
+}
+#img_storia {
+  height: 400px;
+  width: 650px;
+  margin: 40px;
+}
+
+/* Text Styles */
+h5, #text_carousel {
+  color: white;
+  font-size: large;
+}
+#title {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Mafia Hollow', sans-serif;
+}
+#page-link {
+  font-size: 14px;
+}
+#current-page {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Cards */
+.custom-card {
+  height: 100%;
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.custom-card:hover {
+  transform: translateY(-10px);
+}
+.custom-card img {
+  height: 180px; /* Adatta l'altezza dell'immagine */
+  object-fit: cover; /* Mantieni il rapporto d'aspetto dell'immagine */
+  border-radius: 10px 10px 0 0;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+.card-title {
+  font-weight: bold;
+}
+.card-text {
+  flex-grow: 1;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+.testimonials .testimonial {
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.testimonials .testimonial-author {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+#testimonianza:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* FAQ */
+.faq {
+  padding: 60px 0;
+}
+.faq .accordion-button {
+  background-color: #007bff;
+  color: #fff;
+}
+.faq .accordion-button:hover {
+  background-color: #0056b3;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  box-shadow: 0 4px 8px black;
+  font-family: 'Oswald', sans-serif;
+}
+.navbar-brand {
+  color: #fff;
+  font-size: 24px;
+  padding: 0 15px;
+}
+.navbar-nav {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.nav-item {
+  width: 33.33%;
+  text-align: center;
+}
+.nav-link {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+.nav-link:hover {
+  background-color: #555;
+}
+
+/* Carousel */
+.carousel {
+  width: 100%;
+  height: 25%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.carousel-item img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+/* Container */
+#container {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  border-top: solid black 2px;
+}
+
+/* Footer */
+footer {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Miscellaneous */
+.content {
+  display: none;
+}
+.riassunto {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
